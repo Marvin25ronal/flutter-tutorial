@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_tutorial/button.dart';
+import 'package:platzi_tutorial/review_card.dart';
 
 class PlaceDescription extends StatelessWidget {
   String namePlace;
@@ -14,9 +16,11 @@ class PlaceDescription extends StatelessWidget {
       children: <Widget>[newMethod(), starsContanier()],
     );
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         titleStars,
         description,
+        Button('Navigate'),
       ],
     );
   }
@@ -56,9 +60,11 @@ class PlaceDescription extends StatelessWidget {
         margin: const EdgeInsets.only(top: 320, left: 20, right: 20),
         child: Text(
           namePlace,
-          style: const TextStyle(fontSize: 30.0, fontWeight: FontWeight.w900,fontFamily: 'Nunito'),
+          style: const TextStyle(
+              fontSize: 30.0,
+              fontWeight: FontWeight.w900,
+              fontFamily: 'Nunito'),
           textAlign: TextAlign.left,
-          
         ));
   }
 }

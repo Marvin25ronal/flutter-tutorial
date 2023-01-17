@@ -87,6 +87,14 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/img/img1.png
+    - assets/img/img2.png
+    - assets/img/img3.png
+    - assets/img/page1.png
+    - assets/img/page2.png
+    - assets/img/page3.png
+    - assets/img/page4.png
   fonts:
     - family: Nunito
       fonts:
