@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:platzi_tutorial/floating_button.dart';
 
 class ImageCard extends StatelessWidget {
   String image = '';
@@ -27,7 +28,9 @@ class ImageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return card;
+    return Stack(
+      alignment: const Alignment(0.9, 1.1),
+      children: [card, const FloatingButton()],
+    );
   }
 }
