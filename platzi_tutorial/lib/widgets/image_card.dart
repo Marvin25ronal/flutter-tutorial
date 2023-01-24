@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/floating_button.dart';
+import 'package:platzi_tutorial/widgets/floating_button.dart';
 
 class ImageCard extends StatelessWidget {
   String image = '';

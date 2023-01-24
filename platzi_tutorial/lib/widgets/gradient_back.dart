@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/hex_color.dart';
+import 'package:platzi_tutorial/widgets/hex_color.dart';
 
 class GradientBack extends StatelessWidget {
   String title = 'Popular';
   bool settingsIcon = false;
+  double height;
   // ignore: use_key_in_widget_constructors
-  GradientBack(this.title, [this.settingsIcon = false]);
+  GradientBack(this.title,this.height, [this.settingsIcon = false]);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: MediaQuery.of(context).size.height * 0.35,
+        height: height,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/hex_color.dart';
+import 'package:platzi_tutorial/widgets/hex_color.dart';
+
 
 class Button extends StatelessWidget {
   String buttonText = 'Navigate';

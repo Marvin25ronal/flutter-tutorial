@@ -1,9 +1,10 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/hex_color.dart';
-import 'package:platzi_tutorial/pages/home_page.dart';
-import 'package:platzi_tutorial/pages/profile/profile_page.dart';
-import 'package:platzi_tutorial/pages/search.dart';
+import 'package:platzi_tutorial/widgets/hex_color.dart';
+import 'package:platzi_tutorial/Animes/ui/screens/waifu_screen.dart';
+
+import 'package:platzi_tutorial/Home/ui/screens/home_page.dart';
+import 'package:platzi_tutorial/User/ui/screens/profile_page.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -15,7 +16,7 @@ class BottomNavigation extends StatefulWidget {
 }
 
 class _BottomNavigation extends State<BottomNavigation> {
-  final List<Widget> _children = const [HomePage(), Search(), ProfilePage()];
+  final List<Widget> _children = const [HomePage(),WaifuScreen(), ProfilePage()];
   int index = 0;
   void onTap(int i) {
     setState(() {
@@ -48,12 +49,12 @@ class _BottomNavigation extends State<BottomNavigation> {
       //   ),
       // ),
       bottomNavigationBar: CurvedNavigationBar(
-        color:HexColor.fromHex('#fb8500') ,
+        color: HexColor.fromHex('#fb8500'),
         backgroundColor: Colors.white,
         buttonBackgroundColor: HexColor.fromHex('#e9ecef'),
         items: const [
           Icon(Icons.home, size: 30),
-          Icon(Icons.search, size: 30),
+          Icon(Icons.book_rounded, size: 30),
           Icon(Icons.person, size: 30),
         ],
         onTap: onTap,

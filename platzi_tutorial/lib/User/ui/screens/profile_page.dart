@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/pages/profile/profile_card.dart';
-import 'package:platzi_tutorial/pages/profile/profile_header.dart';
+import 'package:platzi_tutorial/User/ui/widget/profile_card.dart';
+import 'package:platzi_tutorial/User/ui/widget/profile_header.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});

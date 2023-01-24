@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/floating_button.dart';
+
 
 class ProfileCard extends StatelessWidget {
   String title = "knuckles Mountains Range";
@@ -82,7 +82,7 @@ class ProfileCard extends StatelessWidget {
   Widget build(BuildContext context) {
     
     return Stack(
-     
+
       children: [photo, description],
     );
   }

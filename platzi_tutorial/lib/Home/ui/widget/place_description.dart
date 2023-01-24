@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/button.dart';
-import 'package:platzi_tutorial/review_card.dart';
+
+import 'package:platzi_tutorial/widgets/button.dart';
 
 class PlaceDescription extends StatelessWidget {
   String namePlace;

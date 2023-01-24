@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/card_list.dart';
-import 'package:platzi_tutorial/gradient_back.dart';
+import 'package:platzi_tutorial/widgets/card_list.dart';
+import 'package:platzi_tutorial/widgets/gradient_back.dart';
 
 class Header extends StatelessWidget {
 
@@ -10,7 +10,7 @@ class Header extends StatelessWidget {
 
     return Stack(
       children: [
-        GradientBack('Bienvenido'),
+        GradientBack('Bienvenido',MediaQuery.of(context).size.height * 0.35),
         CardList(),
       ],
     );

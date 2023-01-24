@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:platzi_tutorial/gradient_back.dart';
-import 'package:platzi_tutorial/hex_color.dart';
+import 'package:platzi_tutorial/widgets/gradient_back.dart';
+import 'package:platzi_tutorial/widgets/hex_color.dart';
 
 class ProfileHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        GradientBack('Usuario', true),
+        GradientBack('Usuario',MediaQuery.of(context).size.height * 0.35, true),
         Column(
           children: [
             ProfileInfo(),
